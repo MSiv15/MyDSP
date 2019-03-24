@@ -25,7 +25,7 @@ namespace MyDSP
       }
     };
 
-#ifdef EIGEN_CORE_H
+#ifdef EIGEN_WORLD_VERSION
     template <class Scalar, int... Params>
     struct ZeroInitializerImpl<Eigen::Matrix<Scalar,Params...>>
     {
@@ -46,7 +46,7 @@ namespace MyDSP
       }
     };
 
-#endif /* #ifdef EIGEN_CORE_H */
+#endif /* #ifdef EIGEN_WORLD_VERSION */
 
     template <class T>
     static constexpr T ZeroInitializer(void)

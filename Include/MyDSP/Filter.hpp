@@ -291,7 +291,7 @@ namespace MyDSP
     explicit FIR(const T2 (&coeffs)[NumTaps]) : Base(coeffs) {}
   };
 
-#ifdef EIGEN_CORE_H
+#ifdef EIGEN_WORLD_VERSION
   // 従属型双二次IIRフィルタ(直接型I)
   // Eigen::Matrix用
   template <class T1, int... MatParams, class T2, std::size_t NumStages>
@@ -340,7 +340,7 @@ namespace MyDSP
     }
   };
 
-#endif /* #ifdef EIGEN_CORE_H */
+#endif /* #ifdef EIGEN_WORLD_VERSION */
 
 } /* namespace MyDSP */
 

@@ -106,7 +106,7 @@ namespace MyDSP
     using Base::Base;
   };
 
-#ifdef EIGEN_CORE_H
+#ifdef EIGEN_WORLD_VERSION
   // 離散PIDコントローラ
   // Eigen::Matrix用
   template <class T, int... MatParams>
@@ -136,7 +136,7 @@ namespace MyDSP
     }
   };
 
-#endif /* #ifdef EIGEN_CORE_H */
+#endif /* #ifdef EIGEN_WORLD_VERSION */
 
 } /* namespace MyDSP */
 
