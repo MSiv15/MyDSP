@@ -11,7 +11,8 @@
 
 ## Install
 [MyDSP](Include/MyDSP)ディレクトリを丸ごとプロジェクトのインクルードディレクトリにコピーすれば使用可能です。
-```bash
+
+``` bash
 $ git clone https://github.com/MSiv15/MyDSP.git
 $ cp -r MyDSP/Include/MyDSP SomeProject/Include
 ```
@@ -19,7 +20,8 @@ $ cp -r MyDSP/Include/MyDSP SomeProject/Include
 ## Usage
 機能ごとにファイルが分かれているので、使用する機能に対応するヘッダファイルをインクルードします。  
 Eigenライブラリと連携する場合は本ライブラリより前にEigenをインクルードしてください。
-```c++
+
+``` c++
 #include <iostream>
 #include "Eigen/Core"
 #include "MyDSP/Filter.hpp"
